@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r9">
+    <folder id="0">
+        <file id="0" name="spin1" width="100" height="100" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="1" name="spin2" width="100" height="100" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="2" name="static" width="100" height="100" pivot_x="0.5" pivot_y="0.5"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <obj_info name="entity_000_static" realname="static" type="sprite">
+            <frames>
+                <i folder="0" file="2"/>
+            </frames>
+        </obj_info>
+        <obj_info name="entity_000_spin1" realname="spin1" type="sprite">
+            <frames>
+                <i folder="0" file="0"/>
+                <i folder="0" file="1"/>
+                <i folder="0" file="2"/>
+            </frames>
+        </obj_info>
+        <animation id="0" name="disabled" length="1000" interval="100">
+            <mainline>
+                <key id="0"/>
+            </mainline>
+        </animation>
+        <animation id="1" name="static" length="1" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="static" folder="0" file="2" abs_x="-50" abs_y="50" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="static">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="spinning" length="1500" interval="100" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="spin1" folder="0" file="0" abs_x="-50" abs_y="50" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="29">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="58">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+                <key id="3" time="99">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                </key>
+                <key id="4" time="198">
+                    <object_ref id="0" timeline="0" key="4" z_index="0"/>
+                </key>
+                <key id="5" time="354">
+                    <object_ref id="0" timeline="0" key="5" z_index="0"/>
+                </key>
+                <key id="6" time="599">
+                    <object_ref id="0" timeline="0" key="6" z_index="0"/>
+                </key>
+                <key id="7" time="600">
+                    <object_ref id="0" timeline="0" key="7" z_index="0"/>
+                </key>
+                <key id="8" time="867">
+                    <object_ref id="0" timeline="0" key="8" z_index="0"/>
+                </key>
+                <key id="9" time="1184">
+                    <object_ref id="0" timeline="0" key="9" z_index="0"/>
+                </key>
+                <key id="10" time="1399">
+                    <object_ref id="0" timeline="0" key="10" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="1" name="spin1">
+                <key id="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+                <key id="1" time="29">
+                    <object folder="0" file="1" angle="180"/>
+                </key>
+                <key id="2" time="58">
+                    <object folder="0" file="0" angle="356.054814"/>
+                </key>
+                <key id="3" time="99">
+                    <object folder="0" file="1" angle="171.198292"/>
+                </key>
+                <key id="4" time="198">
+                    <object folder="0" file="0" angle="350.909723"/>
+                </key>
+                <key id="5" time="354">
+                    <object folder="0" file="1" angle="154.851245"/>
+                </key>
+                <key id="6" time="599">
+                    <object folder="0" file="0" angle="330.751174"/>
+                </key>
+                <key id="7" time="600">
+                    <object folder="0" file="2" angle="330.824114"/>
+                </key>
+                <key id="8" time="867">
+                    <object folder="0" file="2" angle="138.814075"/>
+                </key>
+                <key id="9" time="1184">
+                    <object folder="0" file="2" angle="287.132996"/>
+                </key>
+                <key id="10" time="1399" spin="0">
+                    <object folder="0" file="2" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

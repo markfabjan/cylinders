@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r9">
+    <folder id="0">
+        <file id="0" name="click" width="200" height="200" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="1" name="bang" width="200" height="200" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="2" name="shine" width="200" height="200" pivot_x="0.5" pivot_y="0.5"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <obj_info name="entity_000_click" realname="click" type="sprite">
+            <frames>
+                <i folder="0" file="0"/>
+            </frames>
+        </obj_info>
+        <obj_info name="entity_000_bang" realname="bang" type="sprite">
+            <frames>
+                <i folder="0" file="1"/>
+            </frames>
+        </obj_info>
+        <obj_info name="entity_000_shine_001" realname="shine_001" type="sprite">
+            <frames>
+                <i folder="0" file="2"/>
+            </frames>
+        </obj_info>
+        <obj_info name="entity_000_shine_000" realname="shine_000" type="sprite">
+            <frames>
+                <i folder="0" file="2"/>
+            </frames>
+        </obj_info>
+        <animation id="0" name="disabled" length="1" interval="100" looping="false">
+            <mainline>
+                <key id="0"/>
+            </mainline>
+        </animation>
+        <animation id="1" name="click" length="400" interval="100" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="click" folder="0" file="0" abs_x="-100" abs_y="100" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="389">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="400">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="click">
+                <key id="0" spin="-1">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+                <key id="1" time="389" spin="-1">
+                    <object folder="0" file="0" angle="198.441985" scale_x="1.576546" scale_y="1.576546" a="0"/>
+                </key>
+                <key id="2" time="400">
+                    <object folder="0" file="0" angle="180.491095" scale_x="1.640606" scale_y="1.640606" a="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="Bang" length="100" interval="100" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="bang" folder="0" file="1" abs_x="-100" abs_y="100" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="80">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="100">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="1" name="bang">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" angle="0"/>
+                </key>
+                <key id="1" time="80" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="1.635679" scale_y="1.635679" a="0"/>
+                </key>
+                <key id="2" time="100" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="1.794598" scale_y="1.794598" a="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="3" name="shine" length="1000" interval="100" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="shine_001" folder="0" file="2" abs_x="-100" abs_y="100" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0.6" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" name="shine_000" folder="0" file="2" abs_x="-100" abs_y="100" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0.6" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="1000">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="2" name="shine_001">
+                <key id="0">
+                    <object folder="0" file="2" angle="0" a="0.6"/>
+                </key>
+                <key id="1" time="1000" spin="-1">
+                    <object folder="0" file="2" angle="90" scale_x="1" scale_y="1" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="3" name="shine_000">
+                <key id="0" spin="-1">
+                    <object folder="0" file="2" angle="0" a="0.6"/>
+                </key>
+                <key id="1" time="1000">
+                    <object folder="0" file="2" angle="270" a="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
